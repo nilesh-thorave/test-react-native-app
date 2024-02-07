@@ -17,6 +17,7 @@ import {
   View,
 } from "react-native";
 import { getWelcomeMessage } from "./src/test-shared-modules/welcome";
+import { getMobileSharedMessage } from "./src/test-shared-modules/mobile-shared-module";
 import {
   Colors,
   DebugInstructions,
@@ -81,6 +82,7 @@ function App(): React.JSX.Element {
           }}
         >
           <Section title="Welcome">{getWelcomeMessage("Corteva")}</Section>
+          <Section title="Welcome">{getMobileSharedMessage()}</Section>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
